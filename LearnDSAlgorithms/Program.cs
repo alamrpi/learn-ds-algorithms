@@ -12,10 +12,17 @@ namespace LearnDSAlgorithms
             //recursion.HeadRecursion(4);
             //recursion.TreeRecursion(3);
 
-            var exSum = new ExSum();
-            Console.WriteLine(exSum.SumOfNUsingFormula(5));
-            Console.WriteLine(exSum.SumOfNUsingItteration(5));
-            Console.WriteLine(exSum.SumOfNUsingRecursion(5));
+            //Sum Of n natural number
+            //var exSum = new ExSum();
+            //Console.WriteLine(exSum.SumOfNUsingFormula(5));
+            //Console.WriteLine(exSum.SumOfNUsingItteration(5));
+            //Console.WriteLine(exSum.SumOfNUsingRecursion(5));
+
+            //Factorial of a number
+            var factorial = new Factorial();
+            Console.WriteLine(factorial.FactorialRecursion(3));
+            Console.WriteLine(factorial.FactorialItterative(3));
+
 
             Console.ReadKey();
         }
