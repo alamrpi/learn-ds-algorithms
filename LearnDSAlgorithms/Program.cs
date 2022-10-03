@@ -1,4 +1,5 @@
 ﻿using LearnDSAlgorithms.RecursionModule;
+using LearnDSAlgorithms.SearchingAlgorithms;
 
 namespace LearnDSAlgorithms
 {
@@ -19,10 +20,13 @@ namespace LearnDSAlgorithms
             //Console.WriteLine(exSum.SumOfNUsingRecursion(5));
 
             //Factorial of a number
-            var factorial = new Factorial();
-            Console.WriteLine(factorial.FactorialRecursion(3));
-            Console.WriteLine(factorial.FactorialItterative(3));
+            //var factorial = new Factorial();
+            //Console.WriteLine(factorial.FactorialRecursion(3));
+            //Console.WriteLine(factorial.FactorialItterative(3));
 
+            //Searching Algorithms example
+            var search = new Search();
+            Console.WriteLine(search.LinearSearch(new int[] { 5, 6, 7, 89, 88, 99 }, 99));
 
             Console.ReadKey();
         }
