@@ -26,7 +26,8 @@ namespace LearnDSAlgorithms
 
             //Searching Algorithms example
             var search = new Search();
-            Console.WriteLine(search.LinearSearch(new int[] { 5, 6, 7, 89, 88, 99 }, 99));
+            //Console.WriteLine(search.LinearSearch(new int[] { 5, 6, 7, 89, 88, 99 }, 99));
+            Console.WriteLine(search.BinearySearchItterative(new int[] { 5, 6, 7, 87, 88, 99 }, 99));
 
             Console.ReadKey();
         }

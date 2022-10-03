@@ -25,7 +25,12 @@ namespace LearnDSAlgorithms.SearchingAlgorithms
             return -1;
         }
 
-
+        /// <summary>
+        /// Binary Search alogorithms example using itterative
+        /// </summary>
+        /// <param name="listOfData"></param>
+        /// <param name="searchKey"></param>
+        /// <returns></returns>
         public int BinearySearchItterative(int[] listOfData, int searchKey)
         {
             int leftIndex = 0, rightIndex = listOfData.Length - 1;
@@ -40,6 +45,23 @@ namespace LearnDSAlgorithms.SearchingAlgorithms
                     leftIndex = midIndex + 1;
             }
 
+            return -1;
+        }
+
+        public int BinarySearchRecursive(int[] listOfData, int searchKey, int leftIndex, int rightIndex)
+        {
+            if (leftIndex > rightIndex)
+                return -1;
+            else
+            {
+                int mid = (leftIndex + rightIndex) / 2;
+                if (searchKey == listOfData[mid])
+                    return mid;
+                else if (searchKey < listOfData[mid])
+                    return BinarySearchRecursive(listOfData, searchKey, leftIndex, mid - 1);
+                else if (searchKey > listOfData[mid])
+                    return BinarySearchRecursive(listOfData, searchKey, mid + 1, rightIndex);
+            }
             return -1;
         }
     }
