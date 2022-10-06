@@ -1,10 +1,10 @@
-﻿using LearnDSAlgorithms.RecursionModule;
-using LearnDSAlgorithms.SearchingAlgorithms;
+﻿using LearnDSAlgorithms.SortAlgorithms;
 
 namespace LearnDSAlgorithms
 {
     internal class Program
     {
+      
         static void Main(string[] args)
         {
             //Recursion Example Here
@@ -25,10 +25,21 @@ namespace LearnDSAlgorithms
             //Console.WriteLine(factorial.FactorialItterative(3));
 
             //Searching Algorithms example
-            var search = new Search();
+            //var search = new Search();
             //Console.WriteLine(search.LinearSearch(new int[] { 5, 6, 7, 89, 88, 99 }, 99));
-            Console.WriteLine(search.BinearySearchItterative(new int[] { 5, 6, 7, 87, 88, 99 }, 99));
+            //Console.WriteLine(search.BinearySearchItterative(new int[] { 5, 6, 7, 87, 88, 99 }, 99));
 
+
+            //Sorting Example
+            var sortingExample = new SortingExample();
+            var data = new int[] { 5, 2, 8, 89, 78, 65, 50, 85 };
+            Console.WriteLine("------------Unsorted array------------");
+            sortingExample.DisplayArray(data);
+
+            var sortedData = sortingExample.InsertionSort(data);
+
+            Console.WriteLine("------------Sorted array------------");
+            sortingExample.DisplayArray(sortedData);
             Console.ReadKey();
         }
     }
