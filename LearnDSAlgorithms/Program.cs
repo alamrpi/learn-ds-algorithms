@@ -36,7 +36,7 @@ namespace LearnDSAlgorithms
             Console.WriteLine("------------Unsorted array------------");
             sortingExample.DisplayArray(data);
 
-            var sortedData = sortingExample.InsertionSort(data);
+            var sortedData = sortingExample.BubbleSort(data);
 
             Console.WriteLine("------------Sorted array------------");
             sortingExample.DisplayArray(sortedData);

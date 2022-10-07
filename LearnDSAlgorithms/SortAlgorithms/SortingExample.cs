@@ -60,6 +60,22 @@
             return data;
         }
 
+        public int[] BubbleSort(int[] data)
+        {
+            for (int i = data.Length - 1; i >= 0; i--)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if (data[j] > data[j + 1])
+                    {
+                        int tempData = data[j];
+                        data[j] = data[j + 1];
+                        data[j + 1] = tempData;
+                    }
+                }
+            }
+            return data;
+        }
 
     }
 }
