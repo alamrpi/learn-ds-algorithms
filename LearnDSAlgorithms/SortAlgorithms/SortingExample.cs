@@ -60,6 +60,11 @@
             return data;
         }
 
+        /// <summary>
+        /// Bubble Sort Algorithms example
+        /// </summary>
+        /// <param name="data">unsorted array</param>
+        /// <returns>sorted array</returns>
         public int[] BubbleSort(int[] data)
         {
             for (int i = data.Length - 1; i >= 0; i--)
@@ -73,6 +78,36 @@
                         data[j + 1] = tempData;
                     }
                 }
+            }
+            return data;
+        }
+
+        /// <summary>
+        /// Shell Sort Algorithms example
+        /// </summary>
+        /// <param name="data">unsorted array</param>
+        /// <returns>sorted array</returns>
+        public int[] ShellSort(int[] data)
+        {
+            //Time Coplexity O(nlog(n))
+            int n = data.Length;
+            int gap = n / 2;
+            while (gap > 0)
+            {
+                int i = gap;
+                while (i < n)
+                {
+                    int temp = data[i];
+                    int j = i - gap;
+                    while (j >= 0 && data[j] > temp)
+                    {
+                        data[j + gap] = data[j];
+                        j -= gap;
+                    }
+                    data[j + gap] = temp;
+                    i++;
+                }
+                gap /= 2;
             }
             return data;
         }

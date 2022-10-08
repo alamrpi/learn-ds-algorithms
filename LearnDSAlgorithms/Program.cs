@@ -36,10 +36,12 @@ namespace LearnDSAlgorithms
             Console.WriteLine("------------Unsorted array------------");
             sortingExample.DisplayArray(data);
 
-            var sortedData = sortingExample.BubbleSort(data);
 
+            //var sortedData = sortingExample.BubbleSort(data);
+            var merg = new MergeSortExample();
+            merg.MergeSort(data, 0, data.Length - 1);
             Console.WriteLine("------------Sorted array------------");
-            sortingExample.DisplayArray(sortedData);
+            sortingExample.DisplayArray(data);
             Console.ReadKey();
         }
     }
