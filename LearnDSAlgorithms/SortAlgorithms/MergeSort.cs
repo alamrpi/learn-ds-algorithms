@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LearnDSAlgorithms.SortAlgorithms
+﻿namespace LearnDSAlgorithms.SortAlgorithms
 {
     /// <summary>
     /// Merge sort also called conquer and divide.

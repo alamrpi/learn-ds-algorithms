@@ -38,8 +38,8 @@ namespace LearnDSAlgorithms
 
 
             //var sortedData = sortingExample.BubbleSort(data);
-            var merg = new MergeSortExample();
-            merg.MergeSort(data, 0, data.Length - 1);
+            var merg = new QuickShort();
+            merg.Quicksort(data, 0, data.Length - 1);
             Console.WriteLine("------------Sorted array------------");
             sortingExample.DisplayArray(data);
             Console.ReadKey();
