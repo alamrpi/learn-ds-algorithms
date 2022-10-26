@@ -30,18 +30,20 @@ namespace LearnDSAlgorithms
             //Console.WriteLine(search.BinearySearchItterative(new int[] { 5, 6, 7, 87, 88, 99 }, 99));
 
 
-            //Sorting Example
-            var sortingExample = new SortingExample();
-            var data = new int[] { 5, 2, 8, 89, 78, 65, 50, 85 };
-            Console.WriteLine("------------Unsorted array------------");
-            sortingExample.DisplayArray(data);
+            ////Sorting Example
+            //var sortingExample = new SortingExample();
+            //var data = new int[] { 5, 2, 8, 89, 78, 65, 50, 85 };
+            //Console.WriteLine("------------Unsorted array------------");
+            //sortingExample.DisplayArray(data);
 
 
-            //var sortedData = sortingExample.BubbleSort(data);
-            var merg = new QuickShort();
-            merg.Quicksort(data, 0, data.Length - 1);
-            Console.WriteLine("------------Sorted array------------");
-            sortingExample.DisplayArray(data);
+            ////var sortedData = sortingExample.BubbleSort(data);
+            //var merg = new QuickShort();
+            //merg.Quicksort(data, 0, data.Length - 1);
+            //Console.WriteLine("------------Sorted array------------");
+            //sortingExample.DisplayArray(data);
+
+
             Console.ReadKey();
         }
     }
