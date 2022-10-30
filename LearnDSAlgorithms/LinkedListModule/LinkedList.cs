@@ -1,9 +1,9 @@
 ﻿namespace LearnDSAlgorithms.LinkedListModule
 {
-    public class LinkedList
+    public class LinkedList<T> where T : class
     {
-        protected Node? head;
-        protected Node? tail;
+        protected T? head;
+        protected T? tail;
         protected int size;
 
         //Constructor

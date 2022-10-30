@@ -8,26 +8,26 @@ namespace LearnDSAlgorithms
         static void Main(string[] args)
         {
             //Circular Linked list
-            var circular = new CircularLinkedList();
-            circular.AddLast(5);
-            circular.AddLast(2);
-            circular.AddLast(9);
-            circular.AddLast(8);
-            circular.AddLast(6);
-            circular.AddLast(7);
-            circular.AddLast(4);
+            var doubly = new DoublyLinkList();
+            doubly.AddLast(5);
+            doubly.AddLast(2);
+            doubly.AddLast(9);
+            doubly.AddLast(8);
+            doubly.AddLast(6);
+            doubly.AddLast(7);
+            doubly.AddLast(4);
 
             //Traversing
-            Console.WriteLine($"Size of list = {circular.Length()}");
-            circular.Display();
+            Console.WriteLine($"Size of list = {doubly.Length()}");
+            doubly.Display();
             Console.WriteLine("=======================================");
 
-            circular.AddFirst(10);
-            circular.AddAnyPosition(15, 4);
-            circular.RemoveFirst();
-            Console.WriteLine($"Size of list = {circular.Length()}");
-            circular.Display();
-            Console.WriteLine("=======================================");
+            //circular.AddFirst(10);
+            //circular.AddAnyPosition(15, 4);
+            //circular.RemoveFirst();
+            //Console.WriteLine($"Size of list = {circular.Length()}");
+            //circular.Display();
+            //Console.WriteLine("=======================================");
             Console.ReadKey();
         }
     }

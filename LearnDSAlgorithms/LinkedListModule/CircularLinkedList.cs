@@ -1,6 +1,6 @@
 ﻿namespace LearnDSAlgorithms.LinkedListModule
 {
-    public class CircularLinkedList : LinkedList
+    public class CircularLinkedList : LinkedList<SingleNode>
     {
         /// <summary>
         /// //add item in last position.
@@ -9,7 +9,7 @@
         /// <param name="e"></param>
         public void AddLast(int e)
         {
-            var newest = new Node(e, null);
+            var newest = new SingleNode(e, null);
             if (IsEmpty())
             {
                 newest.next = newest;
@@ -32,7 +32,7 @@
         /// <param name="e"></param>
         public void AddFirst(int e)
         {
-            var newNode = new Node(e, null);
+            var newNode = new SingleNode(e, null);
             if (IsEmpty())
             {
                 newNode.next = newNode;
@@ -61,7 +61,7 @@
                 return;
             }
 
-            var newest = new Node(e, null);
+            var newest = new SingleNode(e, null);
             var p = head;
             int i = 1;
             while (i < (position - 1))
@@ -163,7 +163,7 @@
         /// </summary>
         public void Display()
         {
-            Node? p = head;
+            SingleNode? p = head;
             int i = 0;
             while(i < Length())
             {

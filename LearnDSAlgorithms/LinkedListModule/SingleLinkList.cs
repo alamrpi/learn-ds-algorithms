@@ -1,10 +1,10 @@
 ﻿namespace LearnDSAlgorithms.LinkedListModule
 {
-    public class SingleLinkList : LinkedList
+    public class SingleLinkList : LinkedList<SingleNode>
     {
         public void AddLast(int e)
         {
-            Node newest = new(e, null);
+            SingleNode newest = new(e, null);
             if (IsEmpty())
                 head = newest;
             else
@@ -15,7 +15,7 @@
 
         public void AddFirst(int e)
         {
-            Node newest = new Node(e, null);
+            SingleNode newest = new SingleNode(e, null);
             if (IsEmpty())
             {
                 head = newest;
@@ -35,8 +35,8 @@
                 Console.WriteLine("Invalid Position");
                 return;
             }
-            Node newest = new Node(e, null);
-            Node p = head;
+            var newest = new SingleNode(e, null);
+            var p = head;
             int i = 1;
             while (i < position - 1)
             {
@@ -73,7 +73,7 @@
                 Console.WriteLine("List is Empty");
                 return -1;
             }
-            Node p = head;
+            var p = head;
             int i = 1;
             while (i < size - 1)
             {
@@ -95,7 +95,7 @@
                 Console.WriteLine("Invalid Position");
                 return -1;
             }
-            Node p = head;
+            var p = head;
             int i = 1;
             while (i < position - 1)
             {
@@ -121,7 +121,7 @@
 
         public int Search(int key)
         {
-            Node? p = head;
+            var p = head;
             int index = 0;
             while (p != null)
             {
@@ -136,13 +136,13 @@
 
         public void Insertsorted(int e)
         {
-            Node newest = new Node(e, null);
+            var newest = new SingleNode(e, null);
             if (IsEmpty())
                 head = newest;
             else
             {
-                Node? p = head;
-                Node? q = head;
+                var p = head;
+                var q = head;
                 while (p != null && p.element < e)
                 {
                     q = p;
