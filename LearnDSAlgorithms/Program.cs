@@ -1,4 +1,5 @@
 ﻿using LearnDSAlgorithms.LinkedListModule;
+using LearnDSAlgorithms.StackModule;
 
 namespace LearnDSAlgorithms
 {
@@ -7,27 +8,17 @@ namespace LearnDSAlgorithms
       
         static void Main(string[] args)
         {
-            //Circular Linked list
-            var doubly = new DoublyLinkList();
-            doubly.AddLast(5);
-            doubly.AddLast(2);
-            doubly.AddLast(9);
-            doubly.AddLast(8);
-            doubly.AddLast(6);
-            doubly.AddLast(7);
-            doubly.AddLast(4);
-
-            //Traversing
-            Console.WriteLine($"Size of list = {doubly.Length()}");
-            doubly.Display();
-            Console.WriteLine("=======================================");
-
-            //circular.AddFirst(10);
-            //circular.AddAnyPosition(15, 4);
-            //circular.RemoveFirst();
-            //Console.WriteLine($"Size of list = {circular.Length()}");
-            //circular.Display();
-            //Console.WriteLine("=======================================");
+            //Stacks Example
+            var stack = new StacksArray(5);
+            Console.WriteLine($"Is Stack Empty- {stack.IsEmpty()}");
+            stack.Push(5);
+            stack.Push(58);
+            stack.Push(6);
+            stack.Push(45);
+            stack.Push(85);
+            stack.Display();
+            Console.WriteLine($"Pop - {stack.Pop()}");
+            Console.WriteLine($"Peek - {stack.Peek()}");
             Console.ReadKey();
         }
     }
