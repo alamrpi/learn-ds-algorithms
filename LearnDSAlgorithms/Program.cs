@@ -1,5 +1,5 @@
-﻿using LearnDSAlgorithms.LinkedListModule;
-using LearnDSAlgorithms.StackModule;
+﻿using LearnDSAlgorithms.QueuesModule;
+using LearnDSAlgorithms.SortAlgorithms;
 
 namespace LearnDSAlgorithms
 {
@@ -8,18 +8,14 @@ namespace LearnDSAlgorithms
       
         static void Main(string[] args)
         {
-            //Stacks Example
-            var stack = new StacksArray(5);
-            Console.WriteLine($"Is Stack Empty- {stack.IsEmpty()}");
-            stack.Push(5);
-            stack.Push(58);
-            stack.Push(6);
-            stack.Push(45);
-            stack.Push(85);
-            stack.Display();
-            Console.WriteLine($"Pop - {stack.Pop()}");
-            Console.WriteLine($"Peek - {stack.Peek()}");
+            var selectionSort = new BubbleSort();
+            var sortedList = selectionSort.Sort(new int[] { 5, 6,2,7,3, 5, 0, 45, 33, 67 });
+            foreach (var item in sortedList)
+            {
+                Console.WriteLine(item);
+            }
             Console.ReadKey();
         }
     }
+
 }
